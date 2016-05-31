@@ -10,5 +10,19 @@ package E1;
  * @author administrador1
  */
 public class Cesar {
+    public String cifrar(String m, int c)
+{
+    for (int i = 0; i <=m.length(); i++) {
+   
+        
+        int result = m.charAt(i)+c;
+    }
+        String result;
+        return result;
+        
+     
+}
     
 }
+
+
