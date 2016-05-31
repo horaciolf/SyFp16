@@ -12,17 +12,39 @@ package E1;
 public class Cesar {
     public String cifrar(String m, int c)
 {
-    for (int i = 0; i <=m.length(); i++) {
+    String result = "";
+    for (int i = 0; i < m.length(); i++) {
    
-        
-        int result = m.charAt(i)+c;
+        result = result + (char)(m.charAt(i)+ c);
+       
     }
-        String result;
         return result;
-        
      
 }
     
+    public String descifrar (String s, int c)
+    {
+        String result = "";
+    for (int i = 0; i < s.length(); i++) {
+   
+        result = result + (char)(s.charAt(i)+ c);
+       
+    }
+        return result;
+    }
+    
+    
+    public static void main(String[] args) {
+        
+        Cesar c = new Cesar();
+        String s = c.cifrar("hola", 3);
+        
+        System.out.println(s);
+        
+        
+        String s1 = c.descifrar(s, -3);
+        System.out.println(s1);
+    }
 }
 
 
