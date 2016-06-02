@@ -13,10 +13,16 @@ public class Cesar {
     public String cifrar(String m, int c)
 {
     String result = "";
-    for (int i = 0; i < m.length(); i++) {
-   
+    for (int i = 0; i < m.length(); i++)
+    {
+        if((int)m.charAt(i)==10)
+        {
+            result = result + m.charAt(i);
+        }
+        else
+        {
         result = result + (char)(m.charAt(i)+ c);
-       
+        }
     }
         return result;
      
@@ -27,7 +33,7 @@ public class Cesar {
         String result = "";
     for (int i = 0; i < s.length(); i++) {
    
-        result = result + (char)(s.charAt(i)+ c);
+        result = result + (char)(s.charAt(i)- c);
        
     }
         return result;
@@ -42,7 +48,7 @@ public class Cesar {
         System.out.println(s);
         
         
-        String s1 = c.descifrar(s, -3);
+        String s1 = c.descifrar(s, 3);
         System.out.println(s1);
     }
 }
