@@ -33,7 +33,14 @@ public class Cesar {
         String result = "";
     for (int i = 0; i < s.length(); i++) {
    
+        if((int)s.charAt(i)==10)
+        {
+            result = result + s.charAt(i);
+        }
+        else
+        {
         result = result + (char)(s.charAt(i)- c);
+        }
        
     }
         return result;
