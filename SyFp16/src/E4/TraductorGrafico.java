@@ -8,6 +8,7 @@ package E4;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import E5.Traductor;
 
 /**
  *
@@ -15,34 +16,45 @@ import java.awt.event.KeyListener;
  */
 public class TraductorGrafico extends javax.swing.JFrame {
 
+     
+    private Traductor d; 
     /**
      * Creates new form TraductorGrafico
      */
     public TraductorGrafico() {
         initComponents();
+        d = new Traductor();
+        d.agregar("hola", "hello");
+        d.agregar("como", "how");
+        d.agregar("tiempo", "time");
+        d.agregar("verde", "green");
+        d.agregar("luz", "light");
+        
         tat.addKeyListener(new KeyAdapter() {
             String palabra = "";
+            String traduccion = "";
             @Override
             public void keyTyped(KeyEvent e) {
                 
-                 if(e.getKeyChar()!=8)
+                char key = e.getKeyChar();
+                 if(key != 10 && key != ' ' && key != 8)
                 {
-                  palabra = palabra + e.getKeyChar();
-                  tt.setText(palabra);
+                  palabra = palabra + key;
+                  
                 }
-                else if(e.getKeyChar()!= ' ' && e.getKeyChar()!=10)
+                if(key ==8)
                 {
                     palabra =palabra.substring(0, palabra.length()-1);
-                    tt.setText(palabra);
+                    
                     
                 }
-                 else
+                 if(key == 10 || key == ' ')
                 {
-                    tt.setText(palabra);
+                    traduccion = traduccion + " "+ d.traducir(palabra);
                     palabra = "";
                     
                 }
-               
+               tt.setText(traduccion);
             }
         }); 
     
