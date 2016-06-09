@@ -17,7 +17,7 @@ public class Traductor {
     List<String>palabras;
     List<String>traducciones;
     
-    public String eliminar(String s1)
+    public String eliminar(String s1) //metodo
     {
         if(s1 == s1)
         {
@@ -33,12 +33,12 @@ public class Traductor {
         Traductor t = new Traductor();
         t.agregar("reprobar", "fail");
         
-        List<Traductor>listaNueva;
+        List<Traductor>listaNueva; //interface
         listaNueva = new ArrayList<>();
         
     }
     
-    public String traducir(String s1)
+    public String traducir(String s1) //metodo
     {
         int h = palabras.indexOf(s1);
         if(h == -1)
@@ -51,13 +51,13 @@ public class Traductor {
         }
     }
     
-    public void agregar(String s2, String s3)
+    public void agregar(String s2, String s3) //metodo
     {
         palabras.add(s2);
         traducciones.add(s3);
     }
 
-    public Traductor() {
+    public Traductor() {  //constructor
         
         palabras = new ArrayList <>();
         traducciones = new ArrayList <>();
