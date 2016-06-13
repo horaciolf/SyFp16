@@ -19,8 +19,11 @@ public class ConvertidorGrafico extends javax.swing.JFrame {
      */
     public ConvertidorGrafico() {
         initComponents();
+        
+        cb1.removeAllItems();
+        
+        
         cb1.addItem("centimetros");
-        cb1.addItem("metros");
         cb1.addItem("metros");
         cb1.addItem("kilometros");
         cb1.addItem("pulgadas");
@@ -28,8 +31,9 @@ public class ConvertidorGrafico extends javax.swing.JFrame {
         cb1.addItem("yardas");
         cb1.addItem("millas");
         
+        cb2.removeAllItems();
+        
         cb2.addItem("centimetros");
-        cb2.addItem("metros");
         cb2.addItem("metros");
         cb2.addItem("kilometros");
         cb2.addItem("pulgadas");
@@ -43,6 +47,13 @@ public class ConvertidorGrafico extends javax.swing.JFrame {
                 Double d = new Double(tf1.getText());
                 String s = (String) cb1.getSelectedItem();
                String s1 = (String) cb2.getSelectedItem();
+               double valor = d.doubleValue();
+               Convertidor c = new Convertidor();// instancia de la clase Convertidor.
+              double d1 = c.convertir(s, valor, s1);
+               Double t = new Double(d1);
+               tf2.setText(t.toString());
+              
+               
             }
         });
     }

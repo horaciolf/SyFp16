@@ -23,6 +23,7 @@ public class Convertidor {
         mapa.put("kilometros",1000.00);
         mapa.put("pulgadas", .0254);
         mapa.put("pies",.305);
+        mapa.put("yardas", 0.919);
         mapa.put("millas",1613.00);
         
     }

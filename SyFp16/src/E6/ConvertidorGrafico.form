@@ -32,10 +32,8 @@
               <EmptySpace min="-2" pref="154" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="b1" pref="105" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="cb1" pref="105" max="32767" attributes="0"/>
-                      <Component id="cb2" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="cb1" pref="105" max="32767" attributes="0"/>
+                  <Component id="cb2" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="336" max="32767" attributes="0"/>
           </Group>
