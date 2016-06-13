@@ -44,12 +44,12 @@ public class ConvertidorGrafico extends javax.swing.JFrame {
         b1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Double d = new Double(tf1.getText());
-                String s = (String) cb1.getSelectedItem();
+               Double d = new Double(tf1.getText());
+               String s = (String) cb1.getSelectedItem();
                String s1 = (String) cb2.getSelectedItem();
                double valor = d.doubleValue();
                Convertidor c = new Convertidor();// instancia de la clase Convertidor.
-              double d1 = c.convertir(s, valor, s1);
+               double d1 = c.convertir(s, valor, s1);
                Double t = new Double(d1);
                tf2.setText(t.toString());
               
