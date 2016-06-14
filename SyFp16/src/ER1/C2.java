@@ -11,15 +11,7 @@ package ER1;
  */
 public class C2 extends AClase implements IClase {
     
-     public String Descripcion;
-     
-    public void Print ()
-    {
-        System.out.println(Descripcion);
+    public C2(String descripcion) {
+        super(descripcion);
     }
-
-    public C2() {
-        super();
-    }
-    
 }

@@ -10,5 +10,5 @@ package ER1;
  * @author ACER
  */
 public interface IClase {
-    
+    public void print();
 }

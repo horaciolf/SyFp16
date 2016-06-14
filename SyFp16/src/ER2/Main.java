@@ -3,20 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ER1;
+package ER2;
 
 /**
  *
  * @author ACER
  */
-public class C1  extends AClase{
-
-    public C1(String descripcion) {
-        super(descripcion);
+public class Main {
+    
+    public static void main(String[] args) {
+       ILibreria at = new ArchivoBinario("ghjkl", 1);
+       ALibreria ab = new ArchivoImagen(1);
+       ArchivoTexto ai = new ArchivoTexto();
     }
-    
-    
-     
- 
     
 }

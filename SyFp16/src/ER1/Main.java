@@ -12,9 +12,11 @@ package ER1;
 public class Main {
     
     public static void main(String[] args) {
-        IClase i = new C1();
-        AClase a = new C3();
-        C2 c = new C2();
+        IClase i = new C1("hhgf");//instancia de la interface
+        AClase a = new C3("hfg");//instancia de la interface
+        C2 c = new C2("lkj");//instancia de la clase c2
+        
+        a.print();
         
         
     }
