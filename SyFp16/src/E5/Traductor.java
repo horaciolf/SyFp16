@@ -14,10 +14,10 @@ import java.util.List;
  */
 public class Traductor {
      
-    List<String>palabras;
-    List<String>traducciones;
+    List<String>palabras; // asi se crea un arrayList.
+    List<String>traducciones; // asi se crea un arrayList.
     
-    public String eliminar(String s1) //metodo
+    public String eliminar(String s1) //metodo para eliminar.
     {
         if(s1 == s1)
         {
@@ -29,7 +29,7 @@ public class Traductor {
         }
     }
     
-    public static void main(String[] args) {
+    public static void main(String[] args) {// metodo main.
         Traductor t = new Traductor();
         t.agregar("reprobar", "fail");
         

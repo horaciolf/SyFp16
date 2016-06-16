@@ -21,13 +21,13 @@ public class CesarGrafico extends javax.swing.JFrame {
         initComponents();
 
         
-        b1.addActionListener(new ActionListener()
+        b1.addActionListener(new ActionListener() // esta es la forma de hacer que un botton borre algun text field.
                 {
                    public void actionPerformed(ActionEvent e){
                        ta.setText("");
                    } 
                 });
-        b2.addActionListener(new ActionListener()
+        b2.addActionListener(new ActionListener()// esta es la forma de hacer que un botton borre algun text field.
                 {
                    public void actionPerformed(ActionEvent e){
                        tc.setText("");
@@ -36,8 +36,8 @@ public class CesarGrafico extends javax.swing.JFrame {
         
         
 
-        cifrar.addActionListener(new ActionListener() {
-            @Override
+        cifrar.addActionListener(new ActionListener() { // aqui estamos poniendo que al tocar el boton cifrar y escribamos algo
+            @Override                                   //en co y pongamos algo en ta se tradusca a tc.
             public void actionPerformed(ActionEvent e) {
               String s;  
               Integer i = new Integer(co.getText());

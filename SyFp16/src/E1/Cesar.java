@@ -17,11 +17,11 @@ public class Cesar {
     {
         if((int)m.charAt(i)==10)
         {
-            result = result + m.charAt(i);
+            result = result + m.charAt(i);// "resut + result " es la forma de concatenar.
         }
         else
         {
-        result = result + (char)(m.charAt(i)+ c);
+        result = result + (char)(m.charAt(i)+ c);// "resut + result " es la forma de concatenar.
         }
     }
         return result;

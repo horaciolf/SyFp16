@@ -17,13 +17,13 @@ import E5.Traductor;
 public class TraductorGrafico extends javax.swing.JFrame {
 
      
-    private Traductor d; 
+    private Traductor d; //variable de la clase traductor en paquete E5.
     /**
      * Creates new form TraductorGrafico
      */
     public TraductorGrafico() {
         initComponents();
-        d = new Traductor();
+        d = new Traductor();// instancia de la clase traductor en paquete E5..
         d.agregar("hola", "hello");
         d.agregar("como", "how");
         d.agregar("tiempo", "time");
@@ -45,8 +45,7 @@ public class TraductorGrafico extends javax.swing.JFrame {
                 if(key ==8)
                 {
                     palabra =palabra.substring(0, palabra.length()-1);
-                    
-                    
+                 // substring te regresa la palabra cortada desde uno puso el numero hasta el numero deseado.   
                 }
                  if(key == 10 || key == ' ')
                 {
