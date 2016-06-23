@@ -17,6 +17,32 @@ import java.util.logging.Logger;
 public class Cuenta {
     
     double saldo=0;
+    String cliente;
+    int cuenta;
+
+    public Cuenta(String cliente, int cuenta) {
+        this.cliente = cliente;
+        this.cuenta = cuenta;
+    }
+
+    public Cuenta() {
+    }
+    
+    
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public String getCliente() {
+        return cliente;
+    }
+
+    public double getCuenta() {
+        return cuenta;
+    }
+    
+    
     
     
     public double checkSaldo()
