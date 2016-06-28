@@ -21,7 +21,6 @@ public class EjerGrafico extends javax.swing.JFrame {
     public EjerGrafico() throws IOException{
         initComponents();
         Ejer e = new Ejer("employees.csv");
-        e.leerArchivo();
         datos.setModel(e);
     }
 

@@ -28,7 +28,7 @@ public class Ejer extends AbstractTableModel{
         String row [];
        int i = 0;
             
-            br = new BufferedReader(new FileReader("employees.csv"));//instancia para poder leer
+            br = new BufferedReader(new FileReader(guardar));//instancia para poder leer
             String linea;//guarda nuestro txt
             linea = br.readLine();
             while(linea !=null)
@@ -50,7 +50,6 @@ public class Ejer extends AbstractTableModel{
       guardar = s;  
        h = new String [101][7]; 
        leerArchivo();
-        
     }
 
     @Override
@@ -60,7 +59,7 @@ public class Ejer extends AbstractTableModel{
 
     @Override
     public int getColumnCount() {
-       return 7;
+       return 6;
     }
 
     @Override
