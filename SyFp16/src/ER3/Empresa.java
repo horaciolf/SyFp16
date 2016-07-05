@@ -156,7 +156,7 @@ public class Empresa extends AbstractTableModel{
             row = linea.split(";");
             
             
-            if(row[4].equals("STORRAGE"))
+            if(row[4].equals("STORAGE"))
             {
                 i=i+1;
             }
@@ -181,7 +181,7 @@ public class Empresa extends AbstractTableModel{
         v2 = contarPuzzle();
         v3 = contarStorrage();
         
-        h = new String [5][3];
+        h = new String [4][3];
         h [0][0] = "1";
         h [0][1] = "FRAME";
         h [0][2] = " "+ v;
@@ -195,7 +195,7 @@ public class Empresa extends AbstractTableModel{
         h [2][2] = " "+ v2;
         
         h [3][0] = "4";
-        h [3][1] = "STORRAGE";
+        h [3][1] = "STORAGE";
         h [3][2] = " "+ v3;
         
         h1 = new String[3];
@@ -218,7 +218,7 @@ public class Empresa extends AbstractTableModel{
 
     @Override
     public int getRowCount() {
-        return 5;
+        return 4;
     }
 
     @Override
@@ -228,7 +228,7 @@ public class Empresa extends AbstractTableModel{
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return h [rowIndex][columnIndex];
     }
     
 }
